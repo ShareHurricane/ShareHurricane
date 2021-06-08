@@ -1,0 +1,41 @@
+body{
+    background-color:#f6f6f6;
+    font-family:helvetica;
+    font-size:15px;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+
+
+
+.card {
+    margin-bottom: 7px;
+    width:100%;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow:hidden;
+    box-shadow: 0px 4px 6px rgba(0,0,0,.12);
+    
+     }
+.image {
+    width:50px;
+}
+.image img {
+    display:flex;
+    flex-direction: row
+
+}
+.content {
+    padding: 2rem 1.8rem;
+}
+h4 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
