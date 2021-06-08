@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分享飓风-综合影视</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Space Mono', monospace;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper{
+            width: 600px;
+            margin: 10vh auto;
+        }
+
+        h1{
+            margin-bottom: 20px;
+            text-align:center;
+        }
+
+        input{
+            display: none;
+        }
+
+        label{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            border: 3px solid #3E474F;
+            user-select: none;
+        }
+
+        label div:first-child{
+            width: 100%;
+            line-height: 45px;
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+
+        .cross{
+            margin-right: 15px;
+            margin-top: 3px;
+        }
+
+        .cross::before,
+        .cross::after{
+            content: '';
+            border-top: 2px solid #3E474F;
+            width: 15px;
+            display: block;
+            margin-top: 18px;
+            transition: .3s;
+        }
+
+        .cross::after{
+            transform: rotate(90deg);
+            margin-top: -2px;
+        }
+
+        input:checked~label .cross::before{
+            transform: rotate(180deg);
+        }
+
+        input:checked~label .cross::after{
+            transform: rotate(0deg);
+        }
+
+        .content{
+            box-sizing: border-box;
+            font-size: 0.9em;
+            margin: 10px 10px;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height,.5s;
+        }
+
+        input:checked~.content{
+            max-height: 400px;
+            transition: max-height,1s;
+        }
+        
+        .SecondaryMenus{
+            margin-top: 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height,.5s;
+        }
+
+        .SecondaryMenus label{
+            border: none;
+            box-shadow: none;
+            margin: 0;
+        }
+
+        input:checked~.SecondaryMenus{
+            max-height: 400px;
+            border-bottom: 2px solid #3E474F;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>综合影视</h1>
+        <div class="wrap-1">
+            <input type="radio" id="tab-1" name="tabs">
+            <label for="tab-1">
+                <div>影视在线</div>
+                <div class="cross"></div>
+            </label>
+            <div class="content">
+                <a href=https://www.ixigua.com/channel/dianying/ target="_blank">西瓜视频</a>
+                <a href=https://ddrk.me/ target="_blank">低端影视</a>
+                <a href=http://www.zyshow.net/ target="_blank">台湾综艺节目</a>
+                <a href=http://downtv.gdwar.cn/ target="_blank">MageDN</a>
+                <a href=https://nfxhd.com/target="_blank">4k鸭奈飞</a>
+                <a href=https://www.91kanju.com/ target="_blank">91看剧</a>
+                <a href=http://www.liaocao88.com/ target="_blank">潦草影视</a>
+                <a href=https://sharehurricane.github.io/ target="_blank">片库网</a>
+                <a href=http://www.qnvod.net/ target="_blank">全能影视</a>
+                <a href=hhttps://www.bde4.cc/ target="_blank">哔嘀影视</a>
+                <a href=https://www.lanmays.com/ target="_blank">蓝马影视</a>
+                <a href=https://www.zhenbuka2.com/ target="_blank">真不卡电影网</a>
+                <a href=https://www.77kpp.com/ target="_blank">七七看片</a>
+                <a href=https://www.zhaikanys.com/ target="_blank">宅看影视</a>
+                <a href=https://hxys.tv/ target="_blank">回响影视</a>
+                <a href=https://www.qianoo.cn/ target="_blank">厂长资源</a>
+                <a href=https://www.zxzj.me/ target="_blank">在线之家</a>
+                <a href=https://www.idybee.com/ target="_blank">电影蜜蜂</a>
+                <a href=https://www.chok8.com/ target="_blank">chok吧电影院</a>
+                <a href=https://www.ysftv.com/ target="_blank">影视饭TV</a>
+                <a href=https://www.nfmovies.com/ target="_blank">奈非影视</a>
+                <a href=https://www.yunbtv.com/ target="_blank">云播TV</a>
+                <a href=https://www.cmcm5.com/ target="_blank">草民电影</a>
+                <a href=https://www.i6v.cc/ target="_blank">6v电影</a>
+                <a href=http://tv.zdubo.com/ target="_blank">独播库</a>
+                <a href=https://www.pianba.net/ target="_blank">片吧</a>
+                <a href=https://www.nkdyw.cn/ target="_blank">南柯电影网</a>
+                <a href=https://bwl87.com/ target="_blank">阿房影视</a>
+                <a href=https://www.dianyinggou.com/ target="_blank">电影狗</a>
+                <a href=https://www.24kdh.com/sites/1472.html target="_blank">奈飞星影视</a>
+                <a href=http://ifkdy.com/ target="_blank">疯狂影视搜索</a>
+                <a href=https://www.adcmove.com/ target="_blank">ADC电影网</a>
+                <a href=https://www.cupfox.com/ target="_blank">茶杯狐</a>
+                <a href=http://www.yswg.com/ target="_blank">影视王国</a></div>
+        </div>
+
+        <div class="wrap-2">
+            <input type="radio" id="tab-2" name="tabs">
+            <label for="tab-2">
+                <div>动漫网站</div>
+                <div class="cross"></div>
+            </label>
+            <div class="content"><a href=http://www.ikanfan.com/ target="_blank">爱看番</a>
+                <a href=http://www.zzzfun.com/ target="_blank">ZzzFun动漫</a>
+                <a href=http://www.milimili.tv/ target="_blank">咪哩咪哩</a>
+                <a href=http://www.bimiacg.net/ target="_blank">哔咪动漫</a>
+                <a href=http://www.yxdm.org/ target="_blank">怡萱动漫</a>
+                <a href=https://www.36dm.club/ target="_blank">简单动漫</a>
+                <a href=https://www.qiqidongman.com/ target="_blank">奇奇动漫</a>
+                <a href=https://trace.moe/ target="_blank">trace.moe</a>
+                <a href=https://mikanani.me/ target="_blank">蜜柑计划</a>
+                <a href=https://www.92wuc.com/ target="_blank">风车动漫</a>
+                <a href=http://www.imomoe.la/ target="_blank">樱花动漫</a>
+                <a href=https://www.missevan.com/ target="_blank">猫耳FM</a>
+                <a href=https://bgmlist.com/ target="_blank">番组放送</a>
+                <a href=http://cartoon.pptv.com/ target="_blank">PP动漫视频</a>
+                <a href=https://futaacg.com/ target="_blank">扶她动漫</a>
+                <a href=http://www.animetox.com/ target="_blank">Animex动漫社</a>
+                <a href=http://www.dmd55.com/ target="_blank">动漫岛</a></div>
+        </div>
+
+        <div class="wrap-3">
+            <input type="radio" id="tab-3" name="tabs">
+            <label for="tab-3">
+                <div>下载下来</div>
+                <div class="cross"></div>
+            </label>
+            <div class="SecondaryMenus">
+                <div class="SecondaryMenu-wrap">
+                    <input type="radio" id="SecondaryMenu-1" name="SecondaryMenu">
+                    <label for="SecondaryMenu-1">
+                        <div>影视下载</div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="content"> <a href=http://www.yinfans.me/ target="_blank">音范丝</a>
+                        <a href=https://www.uump4.net/ target="_blank">悠悠MP4</a>
+                        <a href=https://www.cilixiong.com/ target="_blank">磁力熊</a>
+                        <a href=http://www.btbuluo.com/ target="_blank">BT部落天堂</a>
+                        <a href=http://wx677.xyz/ target="_blank">无限磁力</a>
+                        <a href=https://www.piaohua.com/ target="_blank">飘花资源网</a>
+                        <a href=http://seedhub.info/ target="_blank">Seedhub</a>
+                        <a href=https://www.bd2020.com/ target="_blank">BD影视</a>
+                        <a href=http://www.hao6v.com/ target="_blank">6v电影</a>
+                        <a href=http://www.mp4ba.cc/ target="_blank">高清MP4</a>
+                        <a href=https://www.88btbtt.com/ target="_blank">BT之家</a>
+                        <a href=https://www.mini4k.com/ target="_blank">mini4k迷客电影</a>
+                        <a href=https://www.12bt.net/ target="_blank">12BT</a>
+                        <a href=https://www.pianku.li/ target="_blank">片库</a>
+                        <a href=https://v.dsb.ink/#/ target="_blank">人人影视分级搜索</a>
+                        <a href=https://www.80s.tw/ target="_blank">80s电影网</a>
+                        <a href=https://www.btsj5.com/ target="_blank">BT世界</a>
+                        <a href=https://yyets.dmesg.app/index.html target="_blank">人人影视下载</a>
+                        <a href=http://www.pianhd.com/ target="_blank">pianHD高清片网</a>
+                        <a href=https://www.loldytt.com/ target="_blank">LOL电影天堂</a>
+                        <a href=https://www.yingyinwu.com/ target="_blank">影音屋</a>
+                        <a href=https://www.lol5s.com/ target="_blank">五杀电影院</a>
+                        <a href=https://www.ck180.net/ target="_blank">ck电影部落</a></div>
+                </div>
+
+                <div class="SecondaryMenu-wrap">
+                    <input type="radio" id="SecondaryMenu-2" name="SecondaryMenu">
+                    <label for="SecondaryMenu-2">
+                        <div>磁力下载</div>
+                        <div class="cross"></div>
+                    </label>
+                    <div class="content"><a href=http://thepiratebay.se.net/ target="_blank">海盗湾</a>
+                        <a href=http://clg6.site/ target="_blank">磁力狗</a>
+                        <a href=https://www.yuhuage.club/ target="_blank">雨花阁</a>
+                        <a href=https://www.qbittorrent.org/ target="_blank">qbittorent</a>
+                        <a href=http://wx677.xyz/ target="_blank">无限磁力</a>
+                        <a href=https://bt.mm6600.com/ target="_blank">91BT</a>
+                        <a href=https://u3c3.org/ target="_blank">u3c3</a>
+                        <a href=https://mmkoo.buzz/ target="_blank">磁力海</a>
+                        <a href=https://www.sokankan87.xyz/ target="_blank">BT吃力</a>
+                        <a href=https://bitcq.com/ target="_blank">bltcq</a>
+                        <a href=http://clm8.net/?from=clm.la target="_blank">磁力猫</a>
+                        <a href=https://duo55.buzz/ target="_blank">磁力多</a>
+                        <a href=http://sobt2.net/ target="_blank">SOBT</a>
+                        <a href=http://bt.btdad2.xyz/ target="_blank">BTDAD</a>
+                        <a href=http://www.eclzz.world/ target="_blank">磁力蜘蛛</a>
+                        <a href=https://www.clp5.xyz/ target="_blank">磁力爬</a>
+                        <a href=https://www.tokyotosho.info/ target="_blank">东京图书馆</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-4">
+            <input type="radio" id="tab-4" name="tabs">
+            <label for="tab-4">
+                <div>日韩剧站</div>
+                <div class="cross"></div>
+            </label>
+            <div class="content">
+                <a href=https://www.waiju.cc/index.html target="_blank">外剧网</a>
+<a href=https://www.tokyonothot.com/ target="_blank">东京不够热</a>
+<a href=https://www.hmtv.me/ target="_blank">韩迷TV</a>
+<a href=www.hanjutv2020.com target="_blank">韩剧TV</a>
+<a href=https://www.rijutv.co/ target="_blank">日剧TV网</a>
+<a href=hhttp://www.wwmulu.com/ target="_blank">91日剧</a>
+<a href=www.ikhanju.cc target="_blank">爱看韩剧网</a></div>
+        </div>
+
+        <div class="wrap-5">
+            <input type="radio" id="tab-5" name="tabs">
+            <label for="tab-5">
+                <div>美剧网站</div>
+                <div class="cross"></div>
+            </label>
+            <div class="content">
+                <a href=http://www.meijuxia.net/ target="_blank">美剧虾</a>
+                <a href=https://www.waiju.cc/index.html target="_blank">外剧网</a>
+                <a href=https://www.meijutt.tv/ target="_blank">美剧天堂</a>
+                <a href=https://91mjw.com/ target="_blank">91美剧网</a>
+                <a href=https://www.imeiju.io/ target="_blank">爱美剧</a>
+                <a href=http://www.meijuniao.com/ target="_blank">美剧鸟</a>
+                <a href=https://www.meijumi.net/ target="_blank">美剧迷</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
